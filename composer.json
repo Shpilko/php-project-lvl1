@@ -1,6 +1,10 @@
 {
     "name": "hexlet/code",
     "description": "my first project on PHP",
+    "license": "MIT",
+    "bin": [
+        "bin/brain-games"
+      ],
     "autoload": {
         "psr-4": {
             "Hexlet\\Code\\": "src/"
