@@ -6,9 +6,9 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\game;
 
-function isEven($num)
+function isEven(int $num)
 {
-    return $num % 2 === 0 ?: false;
+    return ($num % 2 === 0) ? true : false;
 }
 
 

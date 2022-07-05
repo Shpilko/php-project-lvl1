@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\game;
 
-function isPrime($num)
+function isPrime(int $num)
 {
     if ($num < 2) {
         return false;

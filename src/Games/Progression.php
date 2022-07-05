@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function BrainGames\Engine\game;
 
-function getProgression($start, $step, $length)
+function getProgression(int $start, int $step, int $length)
 {
     $progression = [];
     for ($i = 0; $i < $length - 1; $i += 1) {
@@ -16,7 +16,7 @@ function getProgression($start, $step, $length)
     return $progression;
 }
 
-function generateQestion($progression, $index)
+function generateQestion(array $progression, int $index)
 {
     $hiddenProgression = [...$progression];
     $hiddenProgression[$index] = '..';
