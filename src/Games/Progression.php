@@ -8,27 +8,27 @@ use function BrainGames\Engine\game;
 
 function getProgression($start, $step, $length)
 {
-  $progression = [];
-  for ($i = 0; $i < $length - 1; $i += 1) {
-    array_push($progression, $start + $step * $i);
-  }
+    $progression = [];
+    for ($i = 0; $i < $length - 1; $i += 1) {
+      array_push($progression, $start + $step * $i);
+    }
 
-  return $progression;
-};
+    return $progression;
+}
 
 function generateQestion($progression, $index)
 {
     $hiddenProgression = [...$progression];
     $hiddenProgression[$index] = '..';
 
-  return implode(" ", $hiddenProgression);
-};
+    return implode(" ", $hiddenProgression);
+}
 
 function launchGame()
 {
     $description = 'What number is missing in the progression?';
 
-    $askQuestionGiveAnswer = function() {
+    $askQuestionGiveAnswer = function () {
         $progressionLength = 10;
         $firstElement = 0;
         $lastElement = $progressionLength - 2;

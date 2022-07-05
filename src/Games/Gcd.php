@@ -15,7 +15,7 @@ function launchGame()
 {
     $description = 'Find the greatest common divisor of given numbers.';
 
-    $askQuestionGiveAnswer = function() {
+    $askQuestionGiveAnswer = function () {
         $num1 = rand(1, 100);
         $num2 = rand(1, 100);
         $question = "{$num1} {$num2}";

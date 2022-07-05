@@ -24,7 +24,7 @@ function launchGame()
 {
     $description = 'What is the result of the expression?';
 
-    $askQuestionGiveAnswer = function() {
+    $askQuestionGiveAnswer = function () {
         $num1 = rand(1, 100);
         $num2 = rand(1, 100);
         $arr = ['+', '-', '*'];

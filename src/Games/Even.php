@@ -20,7 +20,7 @@ function launchGame()
     $askQuestionGiveAnswer = function () {
         $question = rand(1, 100);
         $correctAnswer = isEven($question) ? 'yes' : 'no';
-        
+
         return [ $question, $correctAnswer ];
     };
 
