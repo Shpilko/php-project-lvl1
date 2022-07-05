@@ -10,7 +10,7 @@ function getProgression($start, $step, $length)
 {
     $progression = [];
     for ($i = 0; $i < $length - 1; $i += 1) {
-      array_push($progression, $start + $step * $i);
+        array_push($progression, $start + $step * $i);
     }
 
     return $progression;
