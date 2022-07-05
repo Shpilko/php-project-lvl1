@@ -8,7 +8,12 @@ use function BrainGames\Engine\game;
 
 function gcd(int $a, int $b)
 {
-    return ($a % $b) ? gcd($b, $a % $b) : abs($b);
+    $i = $a;
+    while ($a % $i !== 0 || $b % $i !== 0) {
+        $i -= 1;
+    }
+  
+    return $i;
 }
 
 function launchGame()
